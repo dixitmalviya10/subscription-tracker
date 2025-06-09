@@ -40,4 +40,7 @@ Delete bin, public and routes folder, And clean up the content inside app.js fil
 // Create routes/API endpoints and import in our app.js, because app.js is the CENTER of our application.
 
 //9
-// 
+// Setup Database - MongoDB
+
+//10
+// npm i mongodb mongoose

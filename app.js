@@ -6,6 +6,7 @@ import { PORT } from './config/env.js';
 import userRouter from './routes/user.routes.js';
 import authRouter from './routes/auth.routes.js';
 import subscriptionRouter from "./routes/subscription.routes.js";
+import connectToDatabse from './db/db.js';
 
 const app = express();
 
@@ -17,8 +18,9 @@ app.get('/', (req, res) => {
     res.send("Hello World");
 })
 
-app.listen(PORT, () => {
-    console.log(`Server is running on Port http://localhost:${PORT}`)
+app.listen(PORT, async () => {
+    console.log(`Server is running on Port http://localhost:${PORT}`);
+    await connectToDatabse();
 })
 
 export default app;
