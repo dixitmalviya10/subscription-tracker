@@ -1,0 +1,43 @@
+Node.js Application Setup
+
+// 1
+// npx express-generator --no-view --git ./ 
+
+Explanation:
+
+npx: Executes a package (like express-generator) without globally installing it.
+express-generator: A CLI tool to quickly scaffold a basic Express.js app.
+--no-view: Tells the generator not to set up any templating engine (like Pug, EJS, etc.). This is useful if you're building an API or front-end separately (e.g., with React).
+--git: Initializes a .gitignore file in the generated app.
+./: Specifies that the Express app should be generated in the current directory.
+
+In short:
+This command creates an Express.js project in the current folder, without a view engine, and adds a .gitignore file.
+
+
+//2
+// To create from scratch,
+Delete bin, public and routes folder, And clean up the content inside app.js file.
+
+//3
+// npm install nodemon -D
+// Nodemon restarts server whenever we make any changes.
+
+//4
+// Add "type": "module", in package.json which enables ES modules and add "dev": "nodemon app.js" inside scripts.
+
+//5
+// npx eslint --init
+// setting up linter will allow us to keep our codebase clean, so we can add more code in a clean way as we continue scaling our API.
+
+//6
+// Setup env by installing dotenv, create config folder in root and inside config create env.js
+
+//7
+// Google REST API naming conventions and best practices to learn more.
+
+//8
+// Create routes/API endpoints and import in our app.js, because app.js is the CENTER of our application.
+
+//9
+// 
