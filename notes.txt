@@ -44,3 +44,9 @@ Delete bin, public and routes folder, And clean up the content inside app.js fil
 
 //10
 // npm i mongodb mongoose
+
+//11
+// Create models for Schema
+
+//12
+// Create middleware for error handling
