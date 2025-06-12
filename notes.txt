@@ -50,3 +50,9 @@ Delete bin, public and routes folder, And clean up the content inside app.js fil
 
 //12
 // Create middleware for error handling
+
+//13
+// npm install jsonwebtoken bcryptjs
+
+//14
+// create controllers
