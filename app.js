@@ -10,6 +10,7 @@ import connectToDatabse from './db/db.js';
 import errorMiddleware from './middlewares/error.middleware.js';
 import cookieParser from 'cookie-parser';
 import arcjetMiddleware from './middlewares/arcjet.middleware.js';
+import workflowRouter from './routes/workflow.routes.js';
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(arcjetMiddleware);
 app.use('/api/v1/auth', authRouter); // app.use() is used for Middleware and Routing
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/subscriptions', subscriptionRouter);
+app.use('/api/v1/workflows', workflowRouter);
 
 // custom middleware
 app.use(errorMiddleware);
